@@ -1,0 +1,43 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    height: 100vh;
+    background: var(--black);
+    overflow-x: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: rgb(0, 0, 0) url("./images/back.jpg")
+    center center / cover no-repeat;
+    filter: blur(127px) brightness(.5);
+    transform: translate3d(-50%, 0, 0);
+    z-index: -2;
+}
+
+input, textarea {
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+}
+
+.main-div {
+    z-index: 4;
+}

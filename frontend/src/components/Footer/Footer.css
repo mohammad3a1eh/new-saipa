@@ -1,0 +1,140 @@
+.footer-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-footer-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 0 20px;
+    border-radius: 16px;
+    width: calc(100% - 120px);
+    background: linear-gradient(0deg, rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    linear-gradient(180deg, transparent 3626.96%, var(--black) 5617.94%);
+}
+
+.main-footer-div-rtl {
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: start;
+}
+
+.main-footer-logo {
+    height: 70px;
+    align-items: center;
+}
+
+.main-footer-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 18px;
+}
+
+.main-footer-menu-stand {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+li {
+    all: unset;
+}
+
+.main-footer-menu-item {
+    all: unset;
+    color: var(--white);
+    font-size: 18px;
+    border: var(--white) solid 2px;
+    padding: 5px 10px;
+    border-radius: 100px;
+    transition-duration: .15s;
+}
+
+.main-footer-menu-item:hover {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.main-footer-menu-item-stand {
+    all: unset;
+    color: var(--white);
+    margin: 0 10px;
+    font-size: 18px;
+    transition-duration: .15s;
+}
+
+.main-footer-menu-item-stand:hover {
+    color: var(--white-hover);
+}
+
+.main-footer-menu-title {
+    color: var(--white);
+    margin: 0 10px 15px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.main-footer-social {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.main-footer-menu-item-icon {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--white);
+    margin: 0 10px;
+    font-size: 18px;
+    transition-duration: .15s;
+}
+
+.main-footer-menu-item-icon:hover {
+    color: var(--white-hover);
+}
+
+.main-footer-copyright {
+    color: var(--white);
+}
+
+@media (max-width: 1200px) {
+    .main-footer-div {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .main-footer-menu-title {
+        text-decoration: underline;
+    }
+
+    .main-footer-menu-item-stand {
+        margin-right: 50px;
+    }
+
+    .main-footer-copyright {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-footer-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-footer-logo {
+        height: 50px;
+    }
+}
