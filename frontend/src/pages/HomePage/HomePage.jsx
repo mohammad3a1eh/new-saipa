@@ -1,10 +1,10 @@
 import "./HomePage.css";
+import Slider from "../../components/Slider/Slider.jsx";
 
 export const HomePage = () => {
   return (
 	  <div>
-		  <h1>home page</h1>
-		  <h2>data ex</h2>
+		  <Slider />
 	  </div>
   )
 }
