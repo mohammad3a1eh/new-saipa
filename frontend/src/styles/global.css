@@ -24,7 +24,7 @@ body::before {
     left: 0;
     width: 200%;
     height: 200%;
-    background: rgb(0, 0, 0) url("./images/back.jpg")
+    background: rgb(0, 0, 0) var(--bg-image)
     center center / cover no-repeat;
     filter: blur(127px) brightness(.5);
     transform: translate3d(-50%, 0, 0);
