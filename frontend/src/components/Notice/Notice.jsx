@@ -42,10 +42,13 @@ export const Notice = ({ data, classFixer = "" }) => {
 	}
 
 	return (
-		<div className={`notice-div ${classFixer}`}>
-			{data.notices.map((item, index) => (
-				<NoticeCard data={item} key={index} />
-			))}
+		<div className="notice-wrapper">
+			<h3 className="notice-wrapper-text">{data.notice_title}</h3>
+			<div className={`notice-div ${classFixer}`}>
+				{data.notices.map((item, index) => (
+					<NoticeCard data={item} key={index} />
+				))}
+			</div>
 		</div>
 	);
 }
