@@ -4,10 +4,13 @@
 
 **این پروژه صرفاً یک نمونه کار شخصی است و کار رسمی سایپا نمی‌باشد**
 
+
+<div style="text-align: center">
+
 [![desktop](media/desktop.png)](media/desktop.mp4)<br>
 [![mobile](media/mobile.png)](media/mobile.mp4)
 
-
+</div>
 
 
 ## ویژگی‌ها
