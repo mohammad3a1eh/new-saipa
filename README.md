@@ -4,8 +4,11 @@
 
 **این پروژه صرفاً یک نمونه کار شخصی است و کار رسمی سایپا نمی‌باشد**
 
-[حالت دسکتاپ](media/desktop.mp4)<br>
-[حالت موبایل](media/mobile.mp4)
+[![desktop](media/desktop.png)](media/desktop.mp4)<br>
+[![mobile](media/mobile.png)](media/mobile.mp4)
+
+
+
 
 ## ویژگی‌ها
 
