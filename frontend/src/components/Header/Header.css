@@ -1,0 +1,129 @@
+.header-div {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    linear-gradient(180deg, transparent 3626.96%, #000 5617.94%);
+    position: relative;
+    z-index: 10;
+}
+
+.main-header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0 10px;
+    gap: 18px;
+}
+
+.main-header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+}
+
+.main-header-logo {
+    height: 50px;
+    width: auto;
+    margin: auto 0;
+}
+
+.main-header-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-header-menu li {
+    all: unset;
+}
+
+.main-header-menu-item {
+    all: unset;
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition-duration: .15s;
+}
+
+.main-header-menu-item:hover {
+    color: var(--white-hover);
+}
+
+.hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: calc(70% - 40px);
+    height: calc(100% - 40px);
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 99;
+
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile-menu.open {
+    right: 0;
+}
+.mobile-menu li {
+    list-style: none;
+    margin: 15px 0;
+}
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.desktop-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main-header-menu-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-close {
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .desktop-menu {
+        display: none;
+    }
+    .hamburger-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .main-header-div {
+        justify-content: space-between;
+    }
+    .main-header-logo {
+        margin-left: 0;
+    }
+}
